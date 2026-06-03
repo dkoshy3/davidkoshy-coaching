@@ -490,6 +490,8 @@
     .process-grid { grid-template-columns: 1fr; }
     .packages-grid { grid-template-columns: 1fr; }
     footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+    section[style*="background: var(--charcoal)"] { padding: 3.5rem 1.5rem !important; }
+    section[style*="background: var(--charcoal)"] > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
   }
 </style>
 </head>
@@ -529,6 +531,46 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- TRANSFORMATION -->
+<section style="background: var(--charcoal); padding: 5rem;">
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <p style="font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--clay); margin-bottom: 0.75rem;">My transformation</p>
+    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 5rem); color: var(--cream); letter-spacing: 0.03em; line-height: 1;">6 Years. 40 lbs of<br><span style="color: var(--clay);">Pure Muscle.</span></h2>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div style="position: relative; overflow: hidden; border-radius: 2px;">
+        <img src="before.jpeg" alt="David Koshy before — 2020, age 18, 125 lbs" style="width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block; filter: grayscale(20%);">
+        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(26,26,26,0.85); padding: 0.3rem 0.75rem; border-radius: 2px;">
+          <span style="font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,240,232,0.6);">Before</span>
+        </div>
+      </div>
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(196,149,106,0.15); padding: 1.25rem; border-radius: 2px;">
+        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--cream); line-height: 1; margin-bottom: 0.25rem;">125 <span style="font-size: 1.2rem; color: var(--muted);">lbs</span></div>
+        <div style="font-size: 0.78rem; color: rgba(245,240,232,0.4); letter-spacing: 0.1em; text-transform: uppercase;">2020 · Age 18</div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div style="position: relative; overflow: hidden; border-radius: 2px; border: 2px solid var(--clay);">
+        <img src="after.jpeg" alt="David Koshy after — 2026, age 24, 165 lbs" style="width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block;">
+        <div style="position: absolute; top: 1rem; left: 1rem; background: var(--clay); padding: 0.3rem 0.75rem; border-radius: 2px;">
+          <span style="font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream);">After</span>
+        </div>
+      </div>
+      <div style="background: rgba(196,149,106,0.1); border: 1px solid rgba(196,149,106,0.3); padding: 1.25rem; border-radius: 2px;">
+        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--clay); line-height: 1; margin-bottom: 0.25rem;">165 <span style="font-size: 1.2rem; color: var(--clay-dark);">lbs</span></div>
+        <div style="font-size: 0.78rem; color: rgba(196,149,106,0.6); letter-spacing: 0.1em; text-transform: uppercase;">2026 · Age 24</div>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="text-align: center; font-size: 0.9rem; color: rgba(245,240,232,0.4); max-width: 480px; margin: 2.5rem auto 0; line-height: 1.8;">No steroids. No shortcuts. Just consistent training, dialed-in nutrition, and showing up every single week for 6 years.</p>
 </section>
 
 <!-- WHAT YOU GET -->
